@@ -1,95 +1,67 @@
-
+# Rodolfo Echemendía Quintana - Professional Résumé
 
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
+<img src="public/profile.jpeg" height="150px" width="auto" style="border-radius: 50%" /> 
 <h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
+    <em>Scala Software Engineer</em> Professional Portfolio
 </h2>
 <p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
+Minimalist résumé optimized for web, print, and PDF.
 </p>
-
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
-
-</p>
-
 </div>
 
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
+---
 
-<p></p>
+## 🌟 Features
 
-<div align="center">
+- **Native i18n Support**: Full support for English and Spanish using Astro's native internationalization.
+- **AI-Driven Engineering**: Showcasing expertise in modern AI tools (Claude Code, Gemini CLI, MCP).
+- **Functional Programming Stack**: Built with a focus on the Scala ecosystem (Http4s, Smithy, Cats).
+- **Command Palette**: Keyboard-accessible navigation with `Cmd + K`.
+- **Minimalist Design**: Clean, fast, and optimized for performance.
 
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+## 🛠️ Tech Stack
 
-</div>
+- [**Astro**](https://astro.build/) - Modern static site generator.
+- [**Typescript**](https://www.typescriptlang.org/) - Type-safe development.
+- [**HotKeyPad**](https://github.com/ssleptsov/hotkeypad) - Keyboard shortcuts management.
+- [**Tailwind CSS**](https://tailwindcss.com/) - Utility-first styling.
 
-<img src="portada.png"></img>
+## 🚀 Getting Started
 
-## 🛠️ Stack
+### 1. Installation
 
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
-
-## 🚀 Empezar
-
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
-
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+I use [pnpm](https://pnpm.io/) as the dependency manager.
 
 ```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+# Install dependencies
+pnpm install
 ```
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
+### 2. Configuration
+
+Content is managed through JSON files:
+- `cv_en.json`: English version.
+- `cv_es.json`: Spanish version.
+
+### 3. Development
 
 ```bash
-# Disfruta del resultado
+# Run development server
 pnpm dev
 ```
 
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+1. Open [**http://localhost:4321**](http://localhost:4321/) to see the results 🚀
 
-## 🧞 Comandos
+## 🧞 Commands
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+| Icon | Command | Action |
+| :--- | :--- | :--- |
+| ⚙️ | `pnpm dev` | Launch local development server at `localhost:4321`. |
+| ⚙️ | `pnpm build` | Build the production-ready site in `./dist/`. |
+| ⚙️ | `pnpm preview` | Preview the production build locally. |
 
-## 🔑 Licencia
+## 🔑 License
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
-
+[MIT](LICENSE.txt) - Custom version by [**Rodolfo Echemendía**](https://github.com/rechemendia).
+Original template by [midudev](https://github.com/midudev).

@@ -1,4 +1,4 @@
-# Rodolfo Echemendia Quintana - Professional Resume
+# Rodolfo Echemendía Quintana - Professional Resume
 
 <div align="center">
 <img src="public/profile.jpeg" height="150px" width="auto" style="border-radius: 50%" /> 

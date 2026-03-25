@@ -84,7 +84,7 @@
       "endDate": "2022-09-01",
       "summary": "Fuertemente involucrado en el desarrollo de productos como Product Owner y CTO para una agencia de viajes omnicanal.",
       "highlights": [
-        "Área de Desarrollo de Productos como Product Owner y Product Manager.",
+        "Área de Desarrollo de Productos como Product Owner and Product Manager.",
         "Mantenimiento y creación de librerías para ayudar al desarrollo interno de Scala.",
         "Tecnologías: Scala, Play Framework, Cats, Cats Effects, Slick, Sangria (GraphQL), Node, Python, MongoDB, Redis, PostgreSQL, MySQL, AWS, Docker, Git, Github Actions, Apache Spark, Apache Airflow"
       ]
@@ -100,87 +100,10 @@
         "Desarrollo de servicios web y aplicaciones utilizando Scala y Java.",
         "Tecnologías: Scala, Java, Play Framework, Cats, Slick, MySQL, Jenkins, Git"
       ]
-    },
-    {
-      "name": "Practia Uruguay @ Telefónica",
-      "position": "Desarrollador de Bases de Datos",
-      "url": "https://argentina.practia.global/",
-      "startDate": "2015-10-01",
-      "endDate": "2016-02-01",
-      "summary": "Desarrollo y migración de bases de datos para Movistar.",
-      "highlights": [
-        "Tecnologías: Oracle SQL Developer, Microsoft SQL Server, SQL, Git, Subversion"
-      ]
-    },
-    {
-      "name": "Practia Uruguay",
-      "position": "Desarrollador Java",
-      "url": "https://argentina.practia.global/",
-      "startDate": "2015-08-01",
-      "endDate": "2015-10-01",
-      "summary": "Desarrollo y soporte de aplicaciones Java.",
-      "highlights": [
-        "Tecnologías: Java, Git, SOAP, HTML5, REST APIs, JavaScript"
-      ]
-    },
-    {
-      "name": "Banco Popular de Ahorro (BPA)",
-      "position": "Desarrollador y Administrador de Sistemas",
-      "startDate": "2011-09-01",
-      "endDate": "2013-09-01",
-      "summary": "Desarrollo y administración de sistemas para una institución bancaria.",
-      "highlights": [
-        "Tecnologías: Java, Python, SQL, HTML5, REST APIs, Subversion"
-      ]
     }
   ],
   "volunteer": [],
   "education": [
-    {
-      "institution": "Rock the JVM",
-      "url": "https://rockthejvm.com/",
-      "area": "Cats Effect (ID de Credencial cert_xnjw4cf1)",
-      "studyType": "Certificación",
-      "startDate": "2023-12-01",
-      "endDate": "2023-12-01",
-      "score": ""
-    },
-    {
-      "institution": "Rock the JVM",
-      "url": "https://rockthejvm.com/",
-      "area": "Cats (ID de Credencial cert_qp6wlf0r)",
-      "studyType": "Certificación",
-      "startDate": "2022-09-01",
-      "endDate": "2022-09-01",
-      "score": ""
-    },
-    {
-      "institution": "Certiprof",
-      "url": "https://certiprof.com/",
-      "area": "Scrum Foundation Professional Certificate (ID de Credencial JLSKLTLSPP-VVWHBCVH-YBJDRYSYTR)",
-      "studyType": "Certificación",
-      "startDate": "2020-06-01",
-      "endDate": "2020-06-01",
-      "score": ""
-    },
-    {
-      "institution": "Coursera",
-      "url": "https://www.coursera.org/",
-      "area": "Functional Program Design in Scala (ID de Credencial 8PWKGPKZPRPF)",
-      "studyType": "Certificación",
-      "startDate": "2017-05-01",
-      "endDate": "2017-05-01",
-      "score": ""
-    },
-    {
-      "institution": "Coursera",
-      "url": "https://www.coursera.org/",
-      "area": "Functional Programming Principles in Scala (ID de Credencial V6LNUGM7X8AU)",
-      "studyType": "Certificación",
-      "startDate": "2016-11-01",
-      "endDate": "2016-11-01",
-      "score": ""
-    },
     {
       "institution": "Universidad de las Ciencias Informáticas (UCI)",
       "url": "https://www.uci.cu/",
@@ -188,7 +111,7 @@
       "studyType": "Grado de Ingeniero",
       "startDate": "2006-01-01",
       "endDate": "2011-01-01",
-      "score": ""
+      "courses": []
     }
   ],
   "awards": [],

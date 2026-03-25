@@ -8,7 +8,7 @@ export const defaultLang = 'en';
 export const ui = {
   en: {
     'section.about': 'About',
-    'section.experience': 'Work Experience',
+    'section.experience': 'Work Experience (Last 5)',
     'section.education': 'Education',
     'section.projects': 'Projects',
     'section.skills': 'Skills',
@@ -21,7 +21,7 @@ export const ui = {
   },
   es: {
     'section.about': 'Sobre mí',
-    'section.experience': 'Experiencia laboral',
+    'section.experience': 'Experiencia laboral (Ultimas 5)',
     'section.education': 'Educación',
     'section.projects': 'Proyectos',
     'section.skills': 'Habilidades',

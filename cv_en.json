@@ -100,87 +100,10 @@
         "Development of web services and applications using Scala and Java",
         "Technologies: Scala, Java, Play Framework, Cats, Slick, MySQL, Jenkins, Git"
       ]
-    },
-    {
-      "name": "Practia Uruguay @ Telefónica",
-      "position": "Database Developer",
-      "url": "https://argentina.practia.global/",
-      "startDate": "2015-10-01",
-      "endDate": "2016-02-01",
-      "summary": "Database development and migration for Movistar.",
-      "highlights": [
-        "Technologies: Oracle SQL Developer, Microsoft SQL Server, SQL, Git, Subversion"
-      ]
-    },
-    {
-      "name": "Practia Uruguay",
-      "position": "Java Developer",
-      "url": "https://argentina.practia.global/",
-      "startDate": "2015-08-01",
-      "endDate": "2015-10-01",
-      "summary": "Java application development and support.",
-      "highlights": [
-        "Technologies: Java, Git, SOAP, HTML5, REST APIs, JavaScript"
-      ]
-    },
-    {
-      "name": "Banco Popular de Ahorro (BPA)",
-      "position": "Developer & SysAdmin",
-      "startDate": "2011-09-01",
-      "endDate": "2013-09-01",
-      "summary": "Development and system administration for a banking institution.",
-      "highlights": [
-        "Technologies: Java, Python, SQL, HTML5, REST APIs, Subversion"
-      ]
     }
   ],
   "volunteer": [],
   "education": [
-    {
-      "institution": "Rock the JVM",
-      "url": "https://rockthejvm.com/",
-      "area": "Cats Effect (Credential ID cert_xnjw4cf1)",
-      "studyType": "Certification",
-      "startDate": "2023-12-01",
-      "endDate": "2023-12-01",
-      "score": ""
-    },
-    {
-      "institution": "Rock the JVM",
-      "url": "https://rockthejvm.com/",
-      "area": "Cats (Credential ID cert_qp6wlf0r)",
-      "studyType": "Certification",
-      "startDate": "2022-09-01",
-      "endDate": "2022-09-01",
-      "score": ""
-    },
-    {
-      "institution": "Certiprof",
-      "url": "https://certiprof.com/",
-      "area": "Scrum Foundation Professional Certificate (Credential ID JLSKLTLSPP-VVWHBCVH-YBJDRYSYTR)",
-      "studyType": "Certification",
-      "startDate": "2020-06-01",
-      "endDate": "2020-06-01",
-      "score": ""
-    },
-    {
-      "institution": "Coursera",
-      "url": "https://www.coursera.org/",
-      "area": "Functional Program Design in Scala (Credential ID 8PWKGPKZPRPF)",
-      "studyType": "Certification",
-      "startDate": "2017-05-01",
-      "endDate": "2017-05-01",
-      "score": ""
-    },
-    {
-      "institution": "Coursera",
-      "url": "https://www.coursera.org/",
-      "area": "Functional Programming Principles in Scala (Credential ID V6LNUGM7X8AU)",
-      "studyType": "Certification",
-      "startDate": "2016-11-01",
-      "endDate": "2016-11-01",
-      "score": ""
-    },
     {
       "institution": "University of Informatic Sciences (UCI)",
       "url": "https://www.uci.cu/",
@@ -188,7 +111,7 @@
       "studyType": "Engineer's degree",
       "startDate": "2006-01-01",
       "endDate": "2011-01-01",
-      "score": ""
+      "courses": []
     }
   ],
   "awards": [],

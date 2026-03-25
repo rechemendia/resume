@@ -1,4 +1,4 @@
-# Rodolfo Echemendía Quintana - Professional Résumé
+# Rodolfo Echemendia Quintana - Professional Resume
 
 <div align="center">
 <img src="public/profile.jpeg" height="150px" width="auto" style="border-radius: 50%" /> 
@@ -6,7 +6,7 @@
     <em>Scala Software Engineer</em> Professional Portfolio
 </h2>
 <p>
-Minimalist résumé optimized for web, print, and PDF.
+Minimalist resume optimized for web, print, and PDF.
 </p>
 </div>
 
@@ -63,5 +63,5 @@ pnpm dev
 
 ## 🔑 License
 
-[MIT](LICENSE.txt) - Custom version by [**Rodolfo Echemendía**](https://github.com/rechemendia).
+[MIT](LICENSE.txt) - Custom version by [**Rodolfo Echemendia**](https://github.com/rechemendia).
 Original template by [midudev](https://github.com/midudev).

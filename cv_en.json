@@ -1,0 +1,286 @@
+{
+  "basics": {
+    "name": "Rodolfo Echemendía Quintana",
+    "label": "Scala Software Engineer",
+    "image": "/profile.jpeg",
+    "email": "rodobarcaaa@gmail.com",
+    "phone": "(+598) 096 434 473",
+    "url": "https://rodobarcaaa.github.io/online-cv/",
+    "summary": "Experienced software engineer in the technology industry, skilled in Scala for developing primarily backend web products, including REST and GraphQL web services, database connections, and interaction with third-party. I've also ventured into data engineering, leveraging my Scala expertise and seamlessly integrating with tools like Spark. Additionally, I bring leadership qualities with strong management and interpersonal skills.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Montevideo",
+      "countryCode": "UY",
+      "region": "Uruguay"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rechemendia",
+        "url": "https://linkedin.com/in/rechemendia"
+      },
+      {
+        "network": "GitHub",
+        "username": "rechemendia",
+        "url": "https://github.com/rechemendia"
+      },
+      {
+        "network": "X",
+        "username": "rodobarcaaa",
+        "url": "https://x.com/rodobarcaaa"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "rodobarcaaa",
+        "url": "https://stackoverflow.com/users/6902412/rodo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Globant / Disney Streaming",
+      "position": "Tech Lead & Scala Engineer",
+      "url": "https://www.globant.com/",
+      "startDate": "2023-11-01",
+      "endDate": null,
+      "summary": "Focus on high-performance backend APIs and large-scale data engineering.",
+      "highlights": [
+        "Managing a data-core platform with 30+ jobs, including streaming and batch workflows.",
+        "Generating multiple reports efficiently using Databricks with Spark and scheduled workflows.",
+        "Serving an average of 30~80 RPS for backend APIs built with smithy, Scala, OpenSearch and DDD architecture.",
+        "Extensively leveraging AI tools to optimize development and workflows.",
+        "Technologies: Scala, smithy, Http4s, Apache Spark, Databricks, AWS, Github Actions, Apache Airflow, Cats, Cats Effects, opensearch, Spinnaker, Jenkins, Claude Code, Kiro CLI"
+      ]
+    },
+    {
+      "name": "Globant / Blockchain Studio",
+      "position": "Tech Lead",
+      "url": "https://www.globant.com/",
+      "startDate": "2022-10-01",
+      "endDate": "2023-10-01",
+      "summary": "Same as before; Globant acquired Atixlabs.",
+      "highlights": []
+    },
+    {
+      "name": "Atix Labs",
+      "position": "Tech Lead / Scala Engineer",
+      "url": "https://www.atixlabs.com/",
+      "startDate": "2021-05-01",
+      "endDate": "2022-09-01",
+      "summary": "Led the engineering team for Ethiopia's National Education System with blockchain identity integration.",
+      "highlights": [
+        "Led the development of scalable REST APIs for the Ethiopia National Education project using Scala and functional programming.",
+        "Maintenance and creating of libraries/seeds for help the internal Scala Development",
+        "Integration with blockchain technologies, creation of DID, CredentialID, and Cardano blockchain through Atala-SDK",
+        "Technologies: Scala, Play Framework, Monix Task, Cats, Slick, PostgreSQL, Tapir, Gatling, Blockchain, Atala-SDK, Apache Kafka, Redis, Docker, Sonarqube"
+      ]
+    },
+    {
+      "name": "MeVuelo",
+      "position": "Co-Founder & CTO",
+      "url": "https://www.mevuelo.com/",
+      "startDate": "2018-01-01",
+      "endDate": "2022-09-01",
+      "summary": "Heavily involved in Product Development as Product Owner and CTO for an omnichannel travel agency.",
+      "highlights": [
+        "Product Development Area as Product Owner and Product Manager",
+        "Maintenance and creating of libraries for help the internal Scala Development",
+        "Technologies: Scala, Play Framework, Cats, Cats Effects, Slick, Sangria (GraphQL), Node, Python, MongoDB, Redis, PostgreSQL, MySQL, AWS, Docker, Git, Github Actions, Apache Spark, Apache Airflow"
+      ]
+    },
+    {
+      "name": "BQN Custom Technology",
+      "position": "Software Engineer",
+      "url": "https://bqn.com.uy/",
+      "startDate": "2016-03-01",
+      "endDate": "2017-12-01",
+      "summary": "Development of web services and applications for the management of lotteries and bets.",
+      "highlights": [
+        "Development of web services and applications using Scala and Java",
+        "Technologies: Scala, Java, Play Framework, Cats, Slick, MySQL, Jenkins, Git"
+      ]
+    },
+    {
+      "name": "Practia Uruguay @ Telefónica",
+      "position": "Database Developer",
+      "url": "https://argentina.practia.global/",
+      "startDate": "2015-10-01",
+      "endDate": "2016-02-01",
+      "summary": "Database development and migration for Movistar.",
+      "highlights": [
+        "Technologies: Oracle SQL Developer, Microsoft SQL Server, SQL, Git, Subversion"
+      ]
+    },
+    {
+      "name": "Practia Uruguay",
+      "position": "Java Developer",
+      "url": "https://argentina.practia.global/",
+      "startDate": "2015-08-01",
+      "endDate": "2015-10-01",
+      "summary": "Java application development and support.",
+      "highlights": [
+        "Technologies: Java, Git, SOAP, HTML5, REST APIs, JavaScript"
+      ]
+    },
+    {
+      "name": "Banco Popular de Ahorro (BPA)",
+      "position": "Developer & SysAdmin",
+      "startDate": "2011-09-01",
+      "endDate": "2013-09-01",
+      "summary": "Development and system administration for a banking institution.",
+      "highlights": [
+        "Technologies: Java, Python, SQL, HTML5, REST APIs, Subversion"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Rock the JVM",
+      "url": "https://rockthejvm.com/",
+      "area": "Cats Effect (Credential ID cert_xnjw4cf1)",
+      "studyType": "Certification",
+      "startDate": "2023-12-01",
+      "endDate": "2023-12-01",
+      "score": ""
+    },
+    {
+      "institution": "Rock the JVM",
+      "url": "https://rockthejvm.com/",
+      "area": "Cats (Credential ID cert_qp6wlf0r)",
+      "studyType": "Certification",
+      "startDate": "2022-09-01",
+      "endDate": "2022-09-01",
+      "score": ""
+    },
+    {
+      "institution": "Certiprof",
+      "url": "https://certiprof.com/",
+      "area": "Scrum Foundation Professional Certificate (Credential ID JLSKLTLSPP-VVWHBCVH-YBJDRYSYTR)",
+      "studyType": "Certification",
+      "startDate": "2020-06-01",
+      "endDate": "2020-06-01",
+      "score": ""
+    },
+    {
+      "institution": "Coursera",
+      "url": "https://www.coursera.org/",
+      "area": "Functional Program Design in Scala (Credential ID 8PWKGPKZPRPF)",
+      "studyType": "Certification",
+      "startDate": "2017-05-01",
+      "endDate": "2017-05-01",
+      "score": ""
+    },
+    {
+      "institution": "Coursera",
+      "url": "https://www.coursera.org/",
+      "area": "Functional Programming Principles in Scala (Credential ID V6LNUGM7X8AU)",
+      "studyType": "Certification",
+      "startDate": "2016-11-01",
+      "endDate": "2016-11-01",
+      "score": ""
+    },
+    {
+      "institution": "University of Informatic Sciences (UCI)",
+      "url": "https://www.uci.cu/",
+      "area": "Computer Science Engineering",
+      "studyType": "Engineer's degree",
+      "startDate": "2006-01-01",
+      "endDate": "2011-01-01",
+      "score": ""
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Scala",
+      "level": "Master",
+      "keywords": [
+        "Http4s", "smithy", "Cats", "Cats Effects", "Monix Task", "Tapir", "Play Framework", "Slick"
+      ]
+    },
+    {
+      "name": "Backend Engineer",
+      "level": "Master",
+      "keywords": [
+        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Java", "Python"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Advanced",
+      "keywords": [
+        "Apache Spark", "Databricks", "Apache Airflow", "OpenSearch", "Google BigQuery"
+      ]
+    },
+    {
+      "name": "Cloud/DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Spinnaker", "Kubernetes"
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "level": "Advanced",
+      "keywords": [
+        "MCP", "Skills", "Kiro CLI", "Claude Code", "Gemini CLI", "Development Optimization"
+      ]
+    },
+    {
+      "name": "Tech/Team Lead",
+      "level": "Advanced",
+      "keywords": [
+        "Leadership", "Scrum", "Agile", "Product Management", "Interpersonal Skills"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Full Professional"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Aurum Finances",
+      "isActive": true,
+      "description": "A personal finance management application to track expenses and income efficiently.",
+      "highlights": [
+        "Full-stack Development",
+        "Financial tracking & reporting"
+      ],
+      "url": "https://aurumfinances.com/"
+    },
+    {
+      "name": "Tapir & Http4s Bookstore",
+      "isActive": true,
+      "description": "Simple best practices with Http4s, Tapir, and Clean Architecture.",
+      "highlights": [
+        "API Seed",
+        "Functional Stack",
+        "Open Source"
+      ],
+      "url": "https://github.com/rechemendia/tapir-http4s-seed"
+    },
+    {
+      "name": "MeVuelo",
+      "isActive": true,
+      "description": "An Omnichannel Travel Agency, The world needs travelers!",
+      "highlights": [
+        "Co-Founder & CTO",
+        "Product Development"
+      ],
+      "url": "https://www.mevuelo.com"
+    }
+  ]
+}

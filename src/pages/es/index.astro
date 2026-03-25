@@ -10,7 +10,7 @@ import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 import LanguagePicker from "@/components/LanguagePicker.astro"
 
-import cv from "../../cv_en.json"
+import cv from "../../../cv_es.json"
 const { basics, work, education, projects, skills } = cv
 const { name, label, summary, image, url, profiles } = basics
 ---
@@ -18,21 +18,21 @@ const { name, label, summary, image, url, profiles } = basics
 <Layout 
   title={`${name} - ${label}`}
   description={summary}
-  lang="en"
+  lang="es"
   image={image}
   url={url}
 >
-  <LanguagePicker currentLang="en" />
+  <LanguagePicker currentLang="es" />
   <main>
-    <Hero basics={basics} lang="en" />
-    <About basics={basics} lang="en" />
-    <Skills skills={skills} lang="en" />
-    <Experience work={work} lang="en" />
-    <Education education={education} lang="en" />
-    <Projects projects={projects} lang="en" />
+    <Hero basics={basics} lang="es" />
+    <About basics={basics} lang="es" />
+    <Skills skills={skills} lang="es" />
+    <Experience work={work} lang="es" />
+    <Education education={education} lang="es" />
+    <Projects projects={projects} lang="es" />
   </main>
 
-  <KeyboardManager profiles={profiles} lang="en" />
+  <KeyboardManager profiles={profiles} lang="es" />
 </Layout>
 
 <style>

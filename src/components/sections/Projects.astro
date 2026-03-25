@@ -1,47 +1,47 @@
 ---
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
+import { useTranslations } from "@/i18n/utils"
 
-import { projects } from "@cv"
+const { projects, lang } = Astro.props
+const t = useTranslations(lang)
 ---
 
-<Section title="Proyectos">
+<Section title={t('section.projects')}>
   <ul>
     {
-      projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
-          return (
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                      {name}
+      projects.map(({ url, description, highlights, name, isActive, github }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <h3>
+                  <a href={url} title={`Ver el proyecto ${name}`} target="_blank">
+                    {name}
+                  </a>
+                  {isActive && <span>&bull;</span>}
+                  {github && (
+                    <a
+                      class="github-code-link"
+                      href={github}
+                      target="_blank"
+                      title={`Ver código fuente del proyecto ${name}`}
+                    >
+                      <GitHub />
                     </a>
-                    {isActive && <span>•</span>}
-                    {github && (
-                      <a
-                        class="github-code-link"
-                        href={github}
-                        target="_blank"
-                        title={`Ver código fuente del proyecto ${name}`}
-                      >
-                        <GitHub />
-                      </a>
-                    )}
-                  </h3>
-                  <p>{description}</p>
-                </header>
-                <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
-                  })}
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
+                  )}
+                </h3>
+                <p>{description}</p>
+              </header>
+              <footer>
+                {highlights.map((highlight) => {
+                  return <span>{highlight}</span>
+                })}
+              </footer>
+            </article>
+          </li>
+        )
+      })
     }
   </ul>
 </Section>
@@ -49,7 +49,7 @@ import { projects } from "@cv"
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
     margin-inline: -16px;
   }
@@ -88,10 +88,6 @@ import { projects } from "@cv"
 
   article h3 span {
     color: rgb(0, 188, 47);
-    animation-name: flicker;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
   }
 
   footer {
@@ -105,25 +101,17 @@ import { projects } from "@cv"
     border-radius: 6px;
     background: #eee;
     color: #444;
-    font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
   }
 
   .github-code-link {
     margin-left: 5px;
+    opacity: 0.6;
   }
 
-  @keyframes flicker {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.25;
-    }
-    100% {
-      opacity: 1;
-    }
+  .github-code-link:hover {
+    opacity: 1;
   }
 
   @media (width <= 700px) {
@@ -132,15 +120,17 @@ import { projects } from "@cv"
     }
 
     article {
-      border: none;
       box-shadow: 0 1px 1px #f2f2f2;
       padding: 0 0 16px 0;
+      border: none;
+      border-bottom: 1px solid #eee;
+      border-radius: 0;
     }
   }
 
   @media print {
-    article h3 span {
-      animation-name: none;
+    article {
+      border: 1px solid #eee;
     }
   }
 </style>

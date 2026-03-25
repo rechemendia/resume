@@ -1,17 +1,23 @@
 ---
 import Section from "../Section.astro"
+import { useTranslations } from "@/i18n/utils"
 
-import { work } from "@cv"
+const { work, lang } = Astro.props
+const t = useTranslations(lang)
 ---
 
-<Section title="Experiencia laboral">
+<Section title={t('section.experience')}>
   <ul>
     {
       work.map(
         ({ name, startDate, endDate, position, summary, highlights, url }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+            endDate != null ? new Date(endDate).getFullYear() : t('work.present')
+
+          // Separar las tecnologías de los highlights
+          const techHighlight = highlights?.find(h => h.toLowerCase().startsWith('technologies') || h.toLowerCase().startsWith('tecnologías'))
+          const pureHighlights = highlights?.filter(h => h !== techHighlight)
 
           return (
             <li>
@@ -26,23 +32,33 @@ import { work } from "@cv"
                     <h4>{position}</h4>
                   </div>
 
-                  <div>
-                    <time 
-                      datetime={startDate}
-                      data-title={startDate}>
-                        {startYear}
-                    </time>
+                  <div class="date">
+                    <time datetime={startDate}>{startYear}</time>
                     {" - "}
-                    <time 
-                      datetime={endDate}
-                      data-title={endDate}>
-                        {endYear}
-                    </time>
+                    <time datetime={endDate}>{endYear}</time>
                   </div>
                 </header>
 
                 <footer>
                   <p>{summary}</p>
+                  {
+                    pureHighlights && pureHighlights.length > 0 && (
+                      <ul class="highlights">
+                        {pureHighlights.map((highlight) => (
+                          <li>
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )
+                  }
+                  {
+                    techHighlight && (
+                      <div class="technologies">
+                        <strong>{t('work.technologies')}:</strong> {techHighlight.split(':')[1]}
+                      </div>
+                    )
+                  }
                 </footer>
               </article>
             </li>
@@ -61,8 +77,9 @@ import { work } from "@cv"
   }
 
   article h3 {
-    font-weight: 500;
+    font-weight: 600;
     color: #111;
+    font-size: 1.1rem;
   }
 
   article a {
@@ -74,56 +91,78 @@ import { work } from "@cv"
   }
 
   article h4 {
-    color: #222;
-    font-weight: 400;
+    color: #444;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
-  time {
-    color: #555;
+  .date {
+    text-align: right;
+    color: #666;
     font-size: 0.85rem;
     min-width: 102px;
-    cursor: default;
   }
 
-  [data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease-in-out 0.5s;
-    visibility: visible;
+  footer p {
+    color: #555;
+    margin-bottom: 12px;
   }
 
-  [data-title]:after {
-    content: attr(data-title);
-    background-color: #333;
-    color: #fff;
-    font-size: .75rem;
-    font-family: Menlo, Monaco, Lucida Console, "Courier New", monospace;;
-    position: absolute;
-    padding: .2rem .5rem;
-    bottom: -1.4rem;
-    left: 50%;
-    white-space: nowrap;
-    box-shadow: 1px 1px 1px #222222;
-    opacity: 0;
-    border: 1px solid #111111;
-    z-index: 99999;
-    visibility: hidden;
-    border-radius: 6px;
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+    padding-left: 0;
   }
 
-  [data-title] {
+  .highlights li {
+    color: #444;
+    font-size: 0.85rem;
+    line-height: 1.4;
     position: relative;
+    padding-left: 1.2rem;
+  }
+
+  .highlights li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #999;
+    font-size: 1.1rem;
+  }
+
+  .technologies {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+    background: #fdfdfd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+  }
+
+  .technologies strong {
+    color: #333;
+    font-weight: 600;
   }
 
   @media (width <= 700px) {
-    time {
-      text-align: right;
+    .date {
+      text-align: left;
+    }
+    header {
+      flex-direction: column;
+      gap: 8px;
     }
   }
 </style>

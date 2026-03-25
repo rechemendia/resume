@@ -1,0 +1,286 @@
+{
+  "basics": {
+    "name": "Rodolfo Echemendía Quintana",
+    "label": "Ingeniero de Software Scala",
+    "image": "/profile.jpeg",
+    "email": "rodobarcaaa@gmail.com",
+    "phone": "(+598) 096 434 473",
+    "url": "https://rodobarcaaa.github.io/online-cv/",
+    "summary": "Ingeniero de software con amplia experiencia en la industria tecnológica, especializado en Scala para el desarrollo de productos web backend, incluyendo servicios web REST y GraphQL, conexiones a bases de datos e interacción con integraciones de terceros. También he incursionado en la ingeniería de datos, aprovechando mi experiencia en Scala e integrándome perfectamente con herramientas como Spark. Además, aporto cualidades de liderazgo con sólidas habilidades de gestión e interpersonales.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Montevideo",
+      "countryCode": "UY",
+      "region": "Uruguay"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rechemendia",
+        "url": "https://linkedin.com/in/rechemendia"
+      },
+      {
+        "network": "GitHub",
+        "username": "rechemendia",
+        "url": "https://github.com/rechemendia"
+      },
+      {
+        "network": "X",
+        "username": "rodobarcaaa",
+        "url": "https://x.com/rodobarcaaa"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "rodobarcaaa",
+        "url": "https://stackoverflow.com/users/6902412/rodo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Globant / Disney Streaming",
+      "position": "Líder Técnico e Ingeniero Scala",
+      "url": "https://www.globant.com/",
+      "startDate": "2023-11-01",
+      "endDate": null,
+      "summary": "Enfoque en APIs backend de alto rendimiento e ingeniería de datos a gran escala.",
+      "highlights": [
+        "Gestión de una plataforma core de datos con más de 30 jobs, incluyendo flujos de streaming y procesamiento por lotes (batch).",
+        "Generación de múltiples informes de manera eficiente utilizando Databricks con Spark y flujos de trabajo programados.",
+        "Sirviendo una media de 30~80 RPS en APIs backend desarrolladas con smithy, Scala, OpenSearch y arquitectura DDD.",
+        "Uso extensivo de herramientas de IA para optimizar el desarrollo y los flujos de trabajo.",
+        "Tecnologías: Scala, smithy, Http4s, Apache Spark, Databricks, AWS, Github Actions, Apache Airflow, Cats, Cats Effects, opensearch, Spinnaker, Jenkins, Claude Code, Kiro CLI"
+      ]
+    },
+    {
+      "name": "Globant / Blockchain Studio",
+      "position": "Líder Técnico",
+      "url": "https://www.globant.com/",
+      "startDate": "2022-10-01",
+      "endDate": "2023-10-01",
+      "summary": "Igual que el anterior; Globant adquirió Atixlabs.",
+      "highlights": []
+    },
+    {
+      "name": "Atix Labs",
+      "position": "Líder Técnico e Ingeniero Scala",
+      "url": "https://www.atixlabs.com/",
+      "startDate": "2021-05-01",
+      "endDate": "2022-09-01",
+      "summary": "Liderazgo del equipo de ingeniería para el Sistema Nacional de Educación de Etiopía con identidad en blockchain.",
+      "highlights": [
+        "Liderazgo en el desarrollo de APIs REST escalables para el proyecto nacional de educación de Etiopía utilizando Scala y programación funcional.",
+        "Mantenimiento y creación de librerías/semillas para ayudar al desarrollo interno de Scala.",
+        "Integración con tecnologías blockchain, creación de DID, CredentialID y blockchain de Cardano a través de Atala-SDK.",
+        "Tecnologías: Scala, Play Framework, Monix Task, Cats, Slick, PostgreSQL, Tapir, Gatling, Blockchain, Atala-SDK, Apache Kafka, Redis, Docker, Sonarqube"
+      ]
+    },
+    {
+      "name": "Travelonux - MeVuelo",
+      "position": "Co-fundador y CTO",
+      "url": "https://www.mevuelo.com/",
+      "startDate": "2018-01-01",
+      "endDate": "2022-09-01",
+      "summary": "Fuertemente involucrado en el desarrollo de productos como Product Owner y CTO para una agencia de viajes omnicanal.",
+      "highlights": [
+        "Área de Desarrollo de Productos como Product Owner y Product Manager.",
+        "Mantenimiento y creación de librerías para ayudar al desarrollo interno de Scala.",
+        "Tecnologías: Scala, Play Framework, Cats, Cats Effects, Slick, Sangria (GraphQL), Node, Python, MongoDB, Redis, PostgreSQL, MySQL, AWS, Docker, Git, Github Actions, Apache Spark, Apache Airflow"
+      ]
+    },
+    {
+      "name": "BQN Custom Technology",
+      "position": "Ingeniero de Software",
+      "url": "https://bqn.com.uy/",
+      "startDate": "2016-03-01",
+      "endDate": "2017-12-01",
+      "summary": "Desarrollo de servicios web y aplicaciones para la gestión de loterías y apuestas.",
+      "highlights": [
+        "Desarrollo de servicios web y aplicaciones utilizando Scala y Java.",
+        "Tecnologías: Scala, Java, Play Framework, Cats, Slick, MySQL, Jenkins, Git"
+      ]
+    },
+    {
+      "name": "Practia Uruguay @ Telefónica",
+      "position": "Desarrollador de Bases de Datos",
+      "url": "https://argentina.practia.global/",
+      "startDate": "2015-10-01",
+      "endDate": "2016-02-01",
+      "summary": "Desarrollo y migración de bases de datos para Movistar.",
+      "highlights": [
+        "Tecnologías: Oracle SQL Developer, Microsoft SQL Server, SQL, Git, Subversion"
+      ]
+    },
+    {
+      "name": "Practia Uruguay",
+      "position": "Desarrollador Java",
+      "url": "https://argentina.practia.global/",
+      "startDate": "2015-08-01",
+      "endDate": "2015-10-01",
+      "summary": "Desarrollo y soporte de aplicaciones Java.",
+      "highlights": [
+        "Tecnologías: Java, Git, SOAP, HTML5, REST APIs, JavaScript"
+      ]
+    },
+    {
+      "name": "Banco Popular de Ahorro (BPA)",
+      "position": "Desarrollador y Administrador de Sistemas",
+      "startDate": "2011-09-01",
+      "endDate": "2013-09-01",
+      "summary": "Desarrollo y administración de sistemas para una institución bancaria.",
+      "highlights": [
+        "Tecnologías: Java, Python, SQL, HTML5, REST APIs, Subversion"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Rock the JVM",
+      "url": "https://rockthejvm.com/",
+      "area": "Cats Effect (ID de Credencial cert_xnjw4cf1)",
+      "studyType": "Certificación",
+      "startDate": "2023-12-01",
+      "endDate": "2023-12-01",
+      "score": ""
+    },
+    {
+      "institution": "Rock the JVM",
+      "url": "https://rockthejvm.com/",
+      "area": "Cats (ID de Credencial cert_qp6wlf0r)",
+      "studyType": "Certificación",
+      "startDate": "2022-09-01",
+      "endDate": "2022-09-01",
+      "score": ""
+    },
+    {
+      "institution": "Certiprof",
+      "url": "https://certiprof.com/",
+      "area": "Scrum Foundation Professional Certificate (ID de Credencial JLSKLTLSPP-VVWHBCVH-YBJDRYSYTR)",
+      "studyType": "Certificación",
+      "startDate": "2020-06-01",
+      "endDate": "2020-06-01",
+      "score": ""
+    },
+    {
+      "institution": "Coursera",
+      "url": "https://www.coursera.org/",
+      "area": "Functional Program Design in Scala (ID de Credencial 8PWKGPKZPRPF)",
+      "studyType": "Certificación",
+      "startDate": "2017-05-01",
+      "endDate": "2017-05-01",
+      "score": ""
+    },
+    {
+      "institution": "Coursera",
+      "url": "https://www.coursera.org/",
+      "area": "Functional Programming Principles in Scala (ID de Credencial V6LNUGM7X8AU)",
+      "studyType": "Certificación",
+      "startDate": "2016-11-01",
+      "endDate": "2016-11-01",
+      "score": ""
+    },
+    {
+      "institution": "Universidad de las Ciencias Informáticas (UCI)",
+      "url": "https://www.uci.cu/",
+      "area": "Ingeniería en Ciencias Informáticas",
+      "studyType": "Grado de Ingeniero",
+      "startDate": "2006-01-01",
+      "endDate": "2011-01-01",
+      "score": ""
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Scala",
+      "level": "Maestro",
+      "keywords": [
+        "Http4s", "smithy", "Cats", "Cats Effects", "Monix Task", "Tapir", "Play Framework", "Slick"
+      ]
+    },
+    {
+      "name": "Backend Engineer",
+      "level": "Maestro",
+      "keywords": [
+        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Java", "Python"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Avanzado",
+      "keywords": [
+        "Apache Spark", "Databricks", "Apache Airflow", "OpenSearch", "Google BigQuery"
+      ]
+    },
+    {
+      "name": "Cloud/DevOps",
+      "level": "Avanzado",
+      "keywords": [
+        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Spinnaker", "Kubernetes"
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "level": "Avanzado",
+      "keywords": [
+        "MCP", "Skills", "Kiro CLI", "Claude Code", "Gemini CLI", "Optimización del Desarrollo"
+      ]
+    },
+    {
+      "name": "Tech/Team Lead",
+      "level": "Avanzado",
+      "keywords": [
+        "Liderazgo", "Scrum", "Agile", "Gestión de Productos", "Habilidades Interpersonales"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Inglés",
+      "fluency": "Competencia profesional completa"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Aurum Finances",
+      "isActive": true,
+      "description": "Una aplicación de gestión de finanzas personales para realizar un seguimiento de los gastos e ingresos de manera eficiente.",
+      "highlights": [
+        "Desarrollo Full-stack",
+        "Seguimiento e informes financieros"
+      ],
+      "url": "https://aurumfinances.com/"
+    },
+    {
+      "name": "Tapir & Http4s Bookstore",
+      "isActive": true,
+      "description": "Buenas prácticas con Http4s, Tapir y Arquitectura Limpia.",
+      "highlights": [
+        "Semilla de API",
+        "Stack Funcional",
+        "Código Abierto"
+      ],
+      "url": "https://github.com/rechemendia/tapir-http4s-seed"
+    },
+    {
+      "name": "MeVuelo",
+      "isActive": true,
+      "description": "Una agencia de viajes omnicanal, ¡el mundo necesita viajeros!",
+      "highlights": [
+        "Co-fundador y CTO",
+        "Desarrollo de Productos"
+      ],
+      "url": "https://www.mevuelo.com"
+    }
+  ]
+}

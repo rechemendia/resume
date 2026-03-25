@@ -1,0 +1,60 @@
+---
+const { currentLang } = Astro.props;
+---
+
+<div class="no-print language-picker">
+  <a href="/" class={currentLang === 'en' ? 'active' : ''}>EN</a>
+  <span>/</span>
+  <a href="/es/" class={currentLang === 'es' ? 'active' : ''}>ES</a>
+</div>
+
+<style>
+  .language-picker {
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  a {
+    color: #888;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  a.active {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  span {
+    color: #eee;
+  }
+
+  @media (width <= 700px) {
+    .language-picker {
+      top: auto;
+      bottom: 16px;
+      right: 16px;
+    }
+  }
+
+  @media print {
+    .language-picker {
+      display: none;
+    }
+  }
+</style>

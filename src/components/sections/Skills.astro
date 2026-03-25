@@ -1,74 +1,67 @@
 ---
 import Section from "../Section.astro"
-import HTML from "@/icons/html.astro"
-import CSS from "@/icons/css.astro"
-import JavaScript from "@/icons/javascript.astro"
-import TypeScript from "@/icons/type.astro"
-import React from "@/icons/react.astro"
-import Node from "@/icons/node.astro"
-import MySQL from "@/icons/sql.astro"
-import Git from "@/icons/git.astro"
-import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/tailwind.astro"
-import Next from "@/icons/next.astro"
-import { skills } from "@cv"
-import Swift from "@/icons/swift.astro"
-import SwiftUI from "@/icons/swiftui.astro"
-import Kotlin from "@/icons/kotlin.astro"
-import Flutter from "@/icons/flutter.astro"
+import { useTranslations } from "@/i18n/utils"
 
-const SKILLS_ICONS: Record<string, any> = {
-  HTML,
-  CSS,
-  JavaScript,
-  TypeScript,
-  React,
-  Node,
-  MySQL,
-  Git,
-  GitHub,
-  Next,
-  Tailwind,
-  Swift,
-  SwiftUI,
-  Kotlin,
-  Flutter,
-}
+const { skills, lang } = Astro.props
+const t = useTranslations(lang)
 ---
 
-<Section title="Habilidades">
-  <ul>
+<Section title={t('section.skills')}>
+  <ul class="main-list">
     {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
-        const Icon = SKILLS_ICONS[iconName]
-
-        return (
-          <li>
-            {Icon && <Icon />} <span>{name}</span>
-          </li>
-        )
-      })
+      skills.map(({ name, keywords }) => (
+        <li>
+          <div class="skill-category">
+            <strong>{name}</strong>
+            <ul class="keywords-list">
+              {keywords.map(keyword => (
+                <li>{keyword}</li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      ))
     }
   </ul>
 </Section>
 
 <style>
-  ul {
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
+  .main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
-  li {
-    align-items: center;
-    background: #eee;
-    border-radius: 6px;
-    color: black;
+  .skill-category {
     display: flex;
-    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skill-category strong {
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .keywords-list li {
+    border-radius: 6px;
+    background: #f2f2f2;
+    color: #444;
+    font-size: 0.75rem;
     font-weight: 500;
-    gap: 4px;
     padding: 0.2rem 0.6rem;
+    transition: all 0.2s ease;
+  }
+
+  .keywords-list li:hover {
+    background: #e8e8e8;
+    color: #000;
   }
 </style>

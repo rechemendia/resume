@@ -2,7 +2,13 @@
 import 'hotkeypad/reset.css'
 import 'hotkeypad/index.css'
 import { type SocialIcon } from "@/types"
+import { type Profiles } from "@/cv"
 import { useTranslations } from "@/i18n/utils"
+
+interface Props {
+  profiles: Profiles[]
+  lang: "en" | "es"
+}
 
 const { profiles, lang } = Astro.props
 const t = useTranslations(lang)
@@ -41,59 +47,173 @@ const SOCIAL_ICONS: SocialIcon = {
     d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
   ></path></svg
 >
-`
+`,
+  "Stack Overflow": `<svg
+  width="16"
+  height="16"
+  viewBox="0 0 32 32"
+  xmlns="http://www.w3.org/2000/svg"
+  style="margin-right: 8px"
+  ><title>Stack Overflow</title><path
+    fill="currentColor"
+    d="M26 26v-8h2v10H4V18h2v8h20zM10 24h12v-2H10v2zm.4-4.6l11.8 2.4.4-2-11.8-2.4-.4 2zm1.6-5l10.8 5.2 1-1.8-10.8-5.2-1 1.8zm3.2-4.8l8.8 8 1.4-1.6-8.8-8-1.4 1.6zm5.2-3.8l-1.8 1.4 6.4 9 1.8-1.4-6.4-9z"
+  ></path></svg
+>`
 }
 
 const profilesInfo = profiles.map(({ network, url }) => {
   const icon = SOCIAL_ICONS[network]
+  const firstLetter = network[0].toUpperCase()
 
   return {
     id: network,
-    section: "Social",
+    section: t('keyboard.social'),
     title: `${t('keyboard.visit')} ${network}`,
     url,
     icon,
+    hotkey: `ctrl+${firstLetter}`
   }
 })
 ---
 
-<footer id="footer-keyboard" class="no-print" set:html={t('keyboard.press')}>
+<footer id="normal-footer" class="no-print">
+  <Fragment set:html={t('keyboard.press')} />
 </footer>
 
-<hotkeypad-manager id="hotkeypad" data-links={JSON.stringify(profilesInfo)} data-print-text={t('keyboard.print')}
-></hotkeypad-manager>
+<div id="footer-button" class="no-print">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-command"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#777"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"
+    ></path>
+  </svg>
+</div>
+
+<div
+  id="hotkeypad"
+  data-placeholder={t('keyboard.search')}
+  data-info={JSON.stringify(profilesInfo)}
+  data-print={t('keyboard.print')}
+  data-actions={t('keyboard.actions')}
+>
+</div>
 
 <script>
+  interface Info {
+    id: string
+    section: string
+    title: string
+    url: string
+    icon: string
+    hotkey: string
+    handler?: () => void
+  }
+
   import HotKeyPad from "hotkeypad"
 
   const hotkeypad = new HotKeyPad()
-  const hotkeypadManager = document.getElementById("hotkeypad")
-  
-  if (hotkeypadManager instanceof HTMLElement) {
-    const dataLinks = hotkeypadManager.getAttribute("data-links")
-    const printText = hotkeypadManager.getAttribute("data-print-text")
-    if (dataLinks) {
-      hotkeypad.setCommands([
-        {
-          id: "print",
-          title: printText || "Print",
-          icon: `<svg  width="16"  height="16"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-printer" style="margin-right: 8px"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" /><path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" /><path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" /></svg>`,
-          section: "Actions",
-          hotkey: "ctrl+P",
-          handler: () => {
-            window.print()
-          },
-        },
-        ...JSON.parse(dataLinks),
-      ])
+  const info = hotkeypad.instance.getAttribute("data-info") ?? "[]"
+  const printLabel = hotkeypad.instance.getAttribute("data-print") ?? "Print"
+  const actionsLabel = hotkeypad.instance.getAttribute("data-actions") ?? "Actions"
+  const parsedInfo = JSON.parse(info) as Info[]
+
+  const data = parsedInfo.map(
+    ({ url, hotkey, icon, id, section, title }) => {
+      return {
+        id,
+        title,
+        icon,
+        hotkey,
+        section,
+        handler: () => {
+          window.open(url, "_blank")
+        }
+      }
     }
-  }
+  )
+  hotkeypad.setCommands([
+    {
+      id: "print",
+      title: printLabel,
+      icon: `<svg style="margin-right: 8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+</svg>`,
+      hotkey: "ctrl+P",
+      section: actionsLabel,
+      handler: () => {
+        window.print()
+      }
+    },
+    ...data
+  ])
+
+  const footerButton = document.getElementById("footer-button")
+  footerButton?.addEventListener("click", () => {
+    const isMac = navigator.userAgent.includes("Mac")
+    var event = new KeyboardEvent("keydown", {
+      key: "K",
+      code: "KeyK",
+      keyCode: 75,
+      which: 75,
+      ctrlKey: !isMac,
+      metaKey: isMac,
+      altKey: false,
+      shiftKey: false
+    })
+
+    document.dispatchEvent(event)
+  })
 </script>
 
 <style>
-  @media print {
-    #footer-keyboard {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 601px) {
+    #normal-footer {
+      display: block;
+    }
+
+    #footer-button {
       display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #normal-footer {
+      display: none;
+    }
+
+    #footer-button {
+      background: #fff;
+      position: fixed;
+      border: 1px solid #eee;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
     }
   }
 
@@ -102,8 +222,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
     border-top: 1px solid #eee;
     position: fixed;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
     width: 100%;
     padding-block: 8px;
     text-align: center;
@@ -117,19 +235,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
     animation-range: entry 100% cover 10%;
   }
 
-  footer :global(kbd) {
+  kbd {
     background: #eee;
     border-radius: 4px;
     padding: 2px 4px;
     font-size: 12px;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
 </style>

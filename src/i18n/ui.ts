@@ -17,6 +17,9 @@ export const ui = {
     'keyboard.press': 'Press <kbd>Cmd</kbd> + <kbd>K</kbd> to open the command palette.',
     'keyboard.visit': 'Visit',
     'keyboard.print': 'Print',
+    'keyboard.search': 'Search command',
+    'keyboard.actions': 'Actions',
+    'keyboard.social': 'Social',
     'hero.worldmap': 'World Map',
   },
   es: {
@@ -30,6 +33,9 @@ export const ui = {
     'keyboard.press': 'Presiona <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.',
     'keyboard.visit': 'Visitar',
     'keyboard.print': 'Imprimir',
+    'keyboard.search': 'Buscar comando',
+    'keyboard.actions': 'Acciones',
+    'keyboard.social': 'Social',
     'hero.worldmap': 'Mapa del mundo',
   },
 } as const;

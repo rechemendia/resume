@@ -1,8 +1,14 @@
 ---
 import Section from "../Section.astro"
 import { useTranslations } from "@/i18n/utils"
+import type { Education, Language } from "@/cv"
 
-const { education, lang } = Astro.props
+interface Props {
+  education: Array<Education>
+  lang: "en" | "es"
+}
+
+const { education, lang } = Astro.props as Props
 const t = useTranslations(lang)
 ---
 

@@ -2,8 +2,14 @@
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
 import { useTranslations } from "@/i18n/utils"
+import type { Projects, Language } from "@/cv"
 
-const { projects, lang } = Astro.props
+interface Props {
+  projects: Array<Projects>
+  lang: "en" | "es"
+}
+
+const { projects, lang } = Astro.props as Props
 const t = useTranslations(lang)
 ---
 

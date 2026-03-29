@@ -9,8 +9,14 @@ import StackOverflow from "@/icons/StackOverflow.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 import type { SocialIcon } from "@/types"
 import { useTranslations } from "@/i18n/utils"
+import type { Basics } from "@/cv"
 
-const { basics, lang } = Astro.props
+interface Props {
+  basics: Basics
+  lang: "en" | "es"
+}
+
+const { basics, lang } = Astro.props as Props
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
 const t = useTranslations(lang)

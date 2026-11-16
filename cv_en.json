@@ -118,7 +118,12 @@
   "certificates": [
     { "name": "Building with the Claude API", "date": "2026-11-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/cbu7betfwy6c" },
     { "name": "Claude Code in Action", "date": "2026-10-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/ntc5mhg7s2n7" },
-    { "name": "AI Fluency Framework & Foundations", "date": "2026-09-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/vvj785kw4nso" }
+    { "name": "AI Fluency Framework & Foundations", "date": "2026-09-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/vvj785kw4nso" },
+    { "name": "Cats Effect", "date": "2023-12-01", "issuer": "Rock the JVM", "url": "https://drive.google.com/file/d/1_YdS4KZqyrKpqo9RYSLt0CaJF8SsXLxr/view" },
+    { "name": "Cats", "date": "2022-09-01", "issuer": "Rock the JVM", "url": "https://drive.google.com/file/d/1EKQDONZduh4KZApG554OBpz4ia9qpooc/view" },
+    { "name": "Scrum Foundation Professional Certificate (SFPC)", "date": "2020-06-01", "issuer": "Certiprof", "url": "https://drive.google.com/file/d/1ku2FvBjKpa2FVligyPD4R4zLSRDBVwcs/view" },
+    { "name": "Functional Program Design in Scala", "date": "2017-05-01", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/8PWKGPKZPRPF" },
+    { "name": "Functional Programming Principles in Scala", "date": "2016-11-01", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/V6LNUGM7X8AU" }
   ],
   "publications": [],
   "skills": [

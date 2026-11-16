@@ -115,21 +115,25 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    { "name": "Building with the Claude API", "date": "2026-11-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/cbu7betfwy6c" },
+    { "name": "Claude Code in Action", "date": "2026-10-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/ntc5mhg7s2n7" },
+    { "name": "AI Fluency Framework & Foundations", "date": "2026-09-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/vvj785kw4nso" }
+  ],
   "publications": [],
   "skills": [
     {
       "name": "Scala",
       "level": "Maestro",
       "keywords": [
-        "Http4s", "smithy", "Cats", "Cats Effects", "Monix Task", "Tapir", "Play Framework", "Slick"
+        "Http4s", "Smithy", "Cats", "Cats Effect", "Monix Task", "Tapir", "Play Framework", "Slick", "Vaadin"
       ]
     },
     {
       "name": "Backend Engineer",
       "level": "Maestro",
       "keywords": [
-        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Java", "Python"
+        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "MinIO", "Java", "Python"
       ]
     },
     {
@@ -143,14 +147,14 @@
       "name": "Cloud/DevOps",
       "level": "Avanzado",
       "keywords": [
-        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Spinnaker", "Kubernetes"
+        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Nexus", "SVN", "Spinnaker", "Kubernetes"
       ]
     },
     {
       "name": "AI Tools",
       "level": "Avanzado",
       "keywords": [
-        "MCP", "Skills", "Claude Code", "Kiro CLI", "Gemini CLI", "Optimización del Desarrollo"
+        "MCP", "Skills", "Claude Code", "OpenCode", "Kiro CLI", "Gemini CLI", "Optimización del Desarrollo"
       ]
     },
     {

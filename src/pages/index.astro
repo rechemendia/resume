@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro"
 
 import About from "@/components/sections/About.astro"
 import Education from "@/components/sections/Education.astro"
+import Certifications from "@/components/sections/Certifications.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Hero from "@/components/sections/Hero.astro"
 import Projects from "@/components/sections/Projects.astro"
@@ -11,7 +12,7 @@ import KeyboardManager from "@/components/KeyboardManager.astro"
 import LanguagePicker from "@/components/LanguagePicker.astro"
 
 import cv from "../../cv_en.json"
-const { basics, work, education, projects, skills } = cv
+const { basics, work, education, certificates, projects, skills } = cv
 const { name, label, summary, image, url, profiles } = basics
 ---
 
@@ -28,6 +29,7 @@ const { name, label, summary, image, url, profiles } = basics
     <About basics={basics} lang="en" />
     <Experience work={work} lang="en" />
     <Education education={education} lang="en" />
+    <Certifications certificates={certificates} lang="en" />
     <Skills skills={skills} lang="en" />
     <Projects projects={projects} lang="en" />
   </main>

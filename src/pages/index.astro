@@ -3,7 +3,6 @@ import Layout from "@/layouts/Layout.astro"
 
 import About from "@/components/sections/About.astro"
 import Education from "@/components/sections/Education.astro"
-import Certifications from "@/components/sections/Certifications.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Hero from "@/components/sections/Hero.astro"
 import Projects from "@/components/sections/Projects.astro"
@@ -28,8 +27,7 @@ const { name, label, summary, image, url, profiles } = basics
     <Hero basics={basics} lang="en" />
     <About basics={basics} lang="en" />
     <Experience work={work} lang="en" />
-    <Education education={education} lang="en" />
-    <Certifications certificates={certificates} lang="en" />
+    <Education education={education} certificates={certificates} lang="en" />
     <Skills skills={skills} lang="en" />
     <Projects projects={projects} lang="en" />
   </main>

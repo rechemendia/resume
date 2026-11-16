@@ -81,8 +81,8 @@
       "position": "Co-Founder & CTO",
       "url": "https://www.mevuelo.com/",
       "startDate": "2018-01-01",
-      "endDate": "2022-09-01",
-      "summary": "Heavily involved in Product Development as Product Owner and CTO for an omnichannel travel agency.",
+      "endDate": "2021-12-31",
+      "summary": "Co-founded and led product and engineering for an omnichannel travel agency during its early growth.",
       "highlights": [
         "Product Development Area as Product Owner and Product Manager",
         "Maintenance and creating of libraries for help the internal Scala Development",
@@ -115,21 +115,29 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    { "name": "Building with the Claude API", "date": "2026-11-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/cbu7betfwy6c" },
+    { "name": "Claude Code in Action", "date": "2026-10-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/ntc5mhg7s2n7" },
+    { "name": "AI Fluency Framework & Foundations", "date": "2026-09-01", "issuer": "Anthropic", "url": "https://verify.skilljar.com/c/vvj785kw4nso" },
+    { "name": "Cats Effect", "date": "2023-12-01", "issuer": "Rock the JVM", "url": "https://drive.google.com/file/d/1_YdS4KZqyrKpqo9RYSLt0CaJF8SsXLxr/view" },
+    { "name": "Cats", "date": "2022-09-01", "issuer": "Rock the JVM", "url": "https://drive.google.com/file/d/1EKQDONZduh4KZApG554OBpz4ia9qpooc/view" },
+    { "name": "Functional Program Design in Scala", "date": "2017-05-01", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/8PWKGPKZPRPF" },
+    { "name": "Functional Programming Principles in Scala", "date": "2016-11-01", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/V6LNUGM7X8AU" }
+  ],
   "publications": [],
   "skills": [
     {
       "name": "Scala",
       "level": "Master",
       "keywords": [
-        "Http4s", "smithy", "Cats", "Cats Effects", "Monix Task", "Tapir", "Play Framework", "Slick"
+        "Http4s", "Smithy", "Cats", "Cats Effect", "Monix Task", "Tapir", "Play Framework", "Slick", "Vaadin"
       ]
     },
     {
       "name": "Backend Engineer",
       "level": "Master",
       "keywords": [
-        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Java", "Python"
+        "REST APIs", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "MinIO", "Java", "Python"
       ]
     },
     {
@@ -143,14 +151,14 @@
       "name": "Cloud/DevOps",
       "level": "Advanced",
       "keywords": [
-        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Spinnaker", "Kubernetes"
+        "AWS", "CI/CD", "GitHub Actions", "Docker", "Jenkins", "Nexus", "SVN", "Spinnaker", "Kubernetes"
       ]
     },
     {
       "name": "AI Tools",
       "level": "Advanced",
       "keywords": [
-        "MCP", "Skills", "Claude Code", "Kiro CLI", "Gemini CLI", "Development Optimization"
+        "MCP", "Skills", "Claude Code", "OpenCode", "Kiro CLI", "Gemini CLI", "Development Optimization"
       ]
     },
     {

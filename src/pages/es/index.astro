@@ -11,7 +11,7 @@ import KeyboardManager from "@/components/KeyboardManager.astro"
 import LanguagePicker from "@/components/LanguagePicker.astro"
 
 import cv from "../../../cv_es.json"
-const { basics, work, education, projects, skills } = cv
+const { basics, work, education, certificates, projects, skills } = cv
 const { name, label, summary, image, url, profiles } = basics
 ---
 
@@ -27,7 +27,7 @@ const { name, label, summary, image, url, profiles } = basics
     <Hero basics={basics} lang="es" />
     <About basics={basics} lang="es" />
     <Experience work={work} lang="es" />
-    <Education education={education} lang="es" />
+    <Education education={education} certificates={certificates} lang="es" />
     <Skills skills={skills} lang="es" />
     <Projects projects={projects} lang="es" />
   </main>

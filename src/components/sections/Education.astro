@@ -19,6 +19,13 @@ interface Certificate {
 const { education, certificates, lang } = Astro.props as Props
 const t = useTranslations(lang)
 const certificateDate = new Intl.DateTimeFormat(lang === "es" ? "es-UY" : "en-US", { month: "short", year: "numeric", timeZone: "UTC" })
+const certificateGroups = Object.values(
+  certificates.reduce<Record<string, Certificate[]>>((groups, certificate) => {
+    groups[certificate.issuer] ??= []
+    groups[certificate.issuer].push(certificate)
+    return groups
+  }, {}),
+)
 ---
 
 <Section title={t('section.education')}>
@@ -50,16 +57,24 @@ const certificateDate = new Intl.DateTimeFormat(lang === "es" ? "es-UY" : "en-US
       })
     }
     {
-      certificates.map(({ name, date, issuer, url }) => (
+      certificateGroups.map((group) => (
         <li>
           <article>
             <header>
               <div>
-                <h3><a href={url} target="_blank" rel="noopener">{name}</a></h3>
+                <h3>{group[0].issuer}</h3>
               </div>
-              <time datetime={date}>{certificateDate.format(new Date(date))}</time>
             </header>
-            <footer><p>{issuer}</p></footer>
+            <footer>
+              <ul class="certificates">
+                {group.map(({ name, date, url }) => (
+                  <li>
+                    <a href={url} target="_blank" rel="noopener">{name}</a>
+                    <time datetime={date}>{certificateDate.format(new Date(date))}</time>
+                  </li>
+                ))}
+              </ul>
+            </footer>
           </article>
         </li>
       ))
@@ -86,6 +101,31 @@ const certificateDate = new Intl.DateTimeFormat(lang === "es" ? "es-UY" : "en-US
 
   article h3 a:hover {
     text-decoration: underline;
+  }
+
+  .certificates {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .certificates li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .certificates a {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .certificates time {
+    color: #555;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 
   header {
